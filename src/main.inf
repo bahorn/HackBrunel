@@ -1,0 +1,33 @@
+[Defines]
+  INF_VERSION                    = 1.25
+  BASE_NAME                      = HackBrunel
+  FILE_GUID                      = 39b25f7c-db05-4acc-ba0a-2bca605bfe26
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 IPF EBC Etc...
+#
+
+[Sources]
+    main.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  
+[LibraryClasses]
+    UefiApplicationEntryPoint
+    UefiLib
+    UefiBootServicesTableLib
+
+[Guids]
+
+[Ppis]
+
+[Protocols]
+
+[FeaturePcd]
+
+[Pcd]
