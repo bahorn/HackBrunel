@@ -131,7 +131,7 @@ draw_square(UINT32 x, UINT32 y, UINT32 length, UINT32 color_sq) {
 void
 place_food() {
     int x = lcg(0xffffffff, 2, 10) % gs.g->g_width;
-    int y = lcg(0xffffffff, 2, 10) % gs.g->g_height;
+    int y = lcg(0xffffffff, 100, 32) % gs.g->g_height;
     grid_data *t2 = &gs.g->d[y*gs.g->g_width + x];
 
     while (t2->type == SNAKE) {
